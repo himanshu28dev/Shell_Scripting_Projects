@@ -13,7 +13,7 @@ Suitable for DevOps, SRE, AWS Support, and Middleware Automation roles.
 - Docker
 - Linux (Ubuntu)
 - Git
-- Nginx (Optional)
+- Nginx
 
 ---
 
