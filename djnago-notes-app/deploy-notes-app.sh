@@ -47,6 +47,9 @@ if ! required_restart; then
         exit 1
 fi
 
-deploy
+if ! deploy; then
+        echo "Deployment failed.....mailing the admin"
+        #email
+        exit 1
 
 echo "************Deployment Ended*************"
