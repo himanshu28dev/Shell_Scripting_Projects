@@ -43,3 +43,34 @@ Suitable for DevOps, AWS Support Engineer, SRE, and Cloud automation roles.
 
 3. **Launch EC2 Instance**
    Using:
+
+
+
+4. **Wait for Running State**
+Script polls EC2 instance status until it's ready
+
+---
+
+## ⚙️ Configuration Required
+
+Before running, fill the following values in the script:
+
+AMI_ID="ami-xxxxx"
+INSTANCE_TYPE="t2.micro"
+KEY_NAME="your-key"
+SUBNET_ID="subnet-xxxx"
+SECURITY_GROUP_IDS="sg-xxx sg-yyy"
+INSTANCE_NAME="my-ec2-instance"
+
+
+You must also have:
+✔ AWS credentials configured (`aws configure`)  
+✔ Valid IAM permissions for EC2 operations  
+
+---
+
+## 🧩 How to Run
+
+```bash
+chmod +x create-ec2.sh
+./create-ec2.sh
